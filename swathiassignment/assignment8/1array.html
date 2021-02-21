@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Get the first element of an array</title>
+<h1>CHECK IN CONSOLE</h1>
+</head>
+<body>
+<script>
+ var first =  function(array, n) {
+      if (array == null) 
+      return void 0;
+    if (n == null) 
+      return array[0];
+    if (n < 0)
+      return [];
+    return array.slice(0, n);
+  };
+
+console.log(first([7, 9, 0, -2],1));
+console.log(first([7, 9, 0, -2],2));
+console.log(first([7, 9, 0, -2],3));
+console.log(first([7, 9, 0, -2],4));
+console.log(first([7, 9, 0, -2],5));
+console.log(first([7, 9, 0, -2],-3));
+   
+</script>
+</body>
+</html>

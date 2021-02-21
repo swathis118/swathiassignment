@@ -1,0 +1,35 @@
+h2 {
+    text-align: center;
+    border-color: cornflowerblue;
+    color: darkblue;
+    text-decoration: underline;
+}
+p {
+    text-decoration: underline;
+    text-align: left;
+    text-align-last: center;
+    text-shadow: blue;
+    background: lightblue;
+    color: blue;
+}
+div {
+    text-align: justify;
+    color: blueviolet;
+}
+table, th, td {
+  border: 1px solid black;
+text-align: center;
+    color: blueviolet;
+    border-bottom-style: ridge;
+
+}
+h6 {
+    text-align: center;   
+}
+h5 {
+    text-align: right; 
+    
+}
+body {
+    border: 0.1px soild black;
+}

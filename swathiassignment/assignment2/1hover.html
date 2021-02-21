@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+table,td,tr{
+margin-left:25%;
+margin-top:15%;
+width:700px;
+height:200px;
+}
+.dot{
+height:105px;
+width:105px;
+background-color:white;
+border-radius:50%;
+display:inline-block;
+margin-top:-25%;
+margin-left:30%;
+}
+.dot:hover{
+background-color:green;
+}
+.dot1{
+height:105px;
+width:105px;
+background-color:white;
+border-radius:50%;
+margin-top:-25%;
+margin-left:46%;
+}
+.dot1:hover{
+background-color:green;
+}
+.dot2{
+height:105px;
+width:105px;
+background-color:white;
+border-radius:50%;
+margin-top:-7%;
+margin-left:63%;
+}
+.dot2:hover{
+background-color:green;
+}
+.dot3{
+height:105px;
+width:105px;
+background-color:white;
+border-radius:50%;
+margin-top:7%;
+margin-left:30%;
+}
+.dot3:hover+.dot4{
+background-color:orangered;
+}
+.dot4{
+height:105px;
+width:105px;
+background-color:white;
+border-radius:50%;
+margin-top:-7%;
+margin-left:46%;
+}
+.dot4:hover+.dot5{
+background-color:orangered;
+}
+.dot5{
+height:105px;
+width:105px;
+background-color:white;
+border-radius:50%;
+margin-top:-7.5%;
+margin-left:63%;
+}
+.dot5:hover+.dot3{
+background-color:orangered;
+}
+</style>
+<body>
+<div class="table">
+<table>
+<tr>
+<th bgcolor="#1F45FC"></th>
+<th bgcolor="#1F45FC"></th>
+<th bgcolor="#1F45FC"></th>
+</tr>
+<tr>
+<th bgcolor="#B7CEEC"></th>
+<th bgcolor="#B7CEEC"></th>
+<th bgcolor="#B7CEEC"></th>
+</tr>
+</table>
+<div class="dot"></div>
+<div class="dot1"></div>
+<div class="dot2"></div>
+<div class="dot3"></div>
+<div class="dot4"></div>
+<div class="dot5"></div>
+</div>
+</body>
+</head>
+</html>

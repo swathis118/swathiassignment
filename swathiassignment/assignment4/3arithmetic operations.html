@@ -1,0 +1,78 @@
+<html>
+ <head>
+ <style>
+ table, td, th
+{
+border: 1px solid black;
+width: 33%;
+text-align: center;
+background-color: DarkGray;
+border-collapse:collapse;
+}
+table { margin: auto; }
+input { text-align:right; }
+ </style>
+ <script>
+ var a,b,c;
+ function clr(){
+ v1.value="";
+ v2.value="";
+ Answer.value="";
+ }
+ function add(){
+ a=Number(document.getElementById("v1").value);
+ b=Number(document.getElementById("v2").value);
+ c=a+b;
+ document.getElementById("Answer").value=c;
+ }
+ function sub(){
+ a=Number(document.getElementById("v1").value);
+ b=Number(document.getElementById("v2").value);
+ c=a-b;
+ document.getElementById("Answer").value=c;
+ }
+ function mul(){
+ a=Number(document.getElementById("v1").value);
+ b=Number(document.getElementById("v2").value);
+ c=a*b;
+ document.getElementById("Answer").value=c;
+ }
+ function div(){
+ a=Number(document.getElementById("v1").value);
+ b=Number(document.getElementById("v2").value);
+ c=a/b;
+ document.getElementById("Answer").value=c;
+ }
+ function mod(){
+ a=Number(document.getElementById("v1").value);
+ b=Number(document.getElementById("v2").value);
+ c=a%b;
+ document.getElementById("Answer").value=c;
+ }
+ </script>
+ <table border="1px">
+  <tr>
+  <th colspan="4">Calculator</th>
+  </tr>
+  <tr>
+  <td>value1</td>
+  <td><input type="text" id="v1" placeholder="0">
+  <td>value2</td >
+   <td><input type="text" id="v2" placeholder="0">
+  </tr>
+  <tr>
+  <td><input type="button" value="ADDTION" onclick="add()">
+  <td><input type="button" value="SUBRATION" onclick="sub()">
+  <td><input type="button" value="MULTIPLICATION" onclick="mul()">
+  <td><input type="button" value="DIVISION" onclick="div()">
+  <td><input type="button" value="MODULUS" onclick="mod()">
+  
+  </tr>
+  <tr>
+  <td>ANSWER</td>
+   <td><input type="text" id="Answer" >
+    <td colspan="2"><input type="button" value="Clear"  onclick="clr()">
+	</tr>
+	</table>
+	</head>
+	</html>

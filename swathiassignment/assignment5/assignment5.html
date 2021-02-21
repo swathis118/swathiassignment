@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Form</title>
+<h1>Registration Form</h1>
+<body>
+<style>
+body {
+text-align: center;
+background-color: aliceblue;
+border:0.1pc solid black;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+</style>
+</head>
+<form action="assignment5.php" method="post">
+<table>
+<tr><td>firstname</td><td><input type="text" name="firstname"></td></tr>
+<tr><td>lastname</td><td><input type="text" name="lastname"></td></tr>
+<tr><td>username</td><td><input type="text" name="username"></td></tr>
+<tr><td>email</td><td><input type="text" name="email"></td></tr>
+<tr><td>password</td><td><input type="text" name="password"></td></tr>
+<tr><td>confirmpassword</td><td><input type="text" name="confirmpassword"></td></tr>
+<tr><td><td><button onclick="myFunction()">submit</button></td></tr>
+
+<p id="demo"></p>
+</table>
+<script>
+function myFunction() {
+  var txt;
+  var r = confirm("Are you sure you want to submit");
+  if (r == true) {
+    txt = "You pressed OK!";
+	
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script> 
+</body>
+</html>
